@@ -1,10 +1,12 @@
 import styled from "styled-components";
 import meteorlog from "../assets/meteorlog.jpeg";
+import store from "../assets/store.jpeg";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 const ProjectStyles = styled.div`
   margin: 50px;
+  position: relative;
 
   .layout,
   .layout2 {
@@ -50,10 +52,10 @@ const ProjectStyles = styled.div`
 
 const LinkStyles = styled.div`
   a {
-    position: relative;
+    position: absolute;
     display: inline-block;
-    top: 200px;
-    left: 500px;
+    top: 300px;
+    left: 750px;
     background: linear-gradient(180deg, #db85b4, #b097f2);
     border-radius: 20px;
     padding: 15px;
@@ -67,9 +69,9 @@ const LinkStyles = styled.div`
   }
 
   .github {
-    position: relative;
-    top: 200px;
-    left: 550px;
+    position: absolute;
+    top: 300px;
+    left: 850px;
   }
 
   svg {
@@ -106,15 +108,25 @@ const Projects = () => {
           </a>
         </LinkStyles>
       </div>
-      {/* <div className="layout2">
-        <h2>Project #2</h2>
+      <div className="layout2">
+        <h2>Collective Coffee</h2>
+        <img src={store} alt="store" />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          This is an interactive website for a coffee shop. It is built with
+          ReactJS, Node.js, Express JS, and MongoDB. It features product
+          selection and checkout landing pages.
         </p>
-      </div> */}
+        <LinkStyles>
+          <a className="weatherapp" href="https://collectivecoffee.netlify.app">
+            <OpenInNewIcon />
+            Visit
+          </a>
+          <a className="github" href="https://github.com/kathleenjvaldez/store">
+            <GitHubIcon />
+            Visit
+          </a>
+        </LinkStyles>
+      </div>
     </ProjectStyles>
   );
 };

@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const ContactStyles = styled.div`
-  margin: 160px 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -14,6 +13,7 @@ const ContactStyles = styled.div`
 
   h3 {
     margin: 0;
+    left: 2rem;
   }
 
   p {
@@ -29,7 +29,7 @@ const ContactStyles = styled.div`
 
 const ContactMe = () => {
   return (
-    <ContactStyles id="contact">
+    <ContactStyles>
       <h3>Contact Me</h3>
       <p>
         I can be reacted at:
