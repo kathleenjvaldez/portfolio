@@ -55,7 +55,7 @@ const LinkStyles = styled.div`
     position: absolute;
     display: inline-block;
     top: 300px;
-    left: 750px;
+    left: 700px;
     background: linear-gradient(180deg, #db85b4, #b097f2);
     border-radius: 20px;
     padding: 15px;

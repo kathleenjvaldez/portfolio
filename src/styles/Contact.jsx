@@ -4,6 +4,7 @@ const ContactStyles = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 2rem;
 
   h3,
   p,
@@ -11,8 +12,8 @@ const ContactStyles = styled.div`
     color: white;
   }
 
-  h3 {
-    margin: 0;
+  .contact {
+    margin: 10px;
     left: 2rem;
   }
 
@@ -30,7 +31,7 @@ const ContactStyles = styled.div`
 const ContactMe = () => {
   return (
     <ContactStyles>
-      <h3>Contact Me</h3>
+      <h3 className="contact">Contact Me</h3>
       <p>
         I can be reacted at:
         <br />
